@@ -1,0 +1,12 @@
+export const UPDATE_BLOCK = "UPDATE_BLOCK";
+export const RESTART = "RESTART";
+export const TOGGLE_SIGNS = "TOGGLE_SIGNS";
+export const EMPTY = "empty";
+export const CROSS = "cross";
+export const CIRCLE = "circle";
+export const TRIPLE = "#2f7d62";
+export const DOUBLE = "#5a5a5a";
+export const SINGLE = "#aaa";
+export const DRAW = "draw";
+export const USER = "user";
+export const PC = "pc";
