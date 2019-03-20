@@ -9,6 +9,7 @@ import { connect } from 'react-redux';
 import Entypo from 'react-native-vector-icons/Entypo';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
+import Foundation from 'react-native-vector-icons/Foundation';
 import * as Animatable from 'react-native-animatable';
 
 import { toggleSigns, restart } from '../actions';
@@ -79,7 +80,7 @@ class Game extends Component {
                         style={styles.option}
                         onPress={restart}
                     >
-                        <Text style={styles.text}>Restart</Text>
+                        <Foundation name={"refresh"} size={40} color={"#205370"}/>
                     </TouchableOpacity>
                     <TouchableOpacity
                         style={styles.option}
@@ -122,8 +123,10 @@ const styles = StyleSheet.create({
         justifyContent: "space-around",
         alignItems: "center",
         flexDirection: "row",
-        width: "100%",
+        width: "60%",
+        marginBottom: 2,
         height: 50,
+        borderRadius: 25
     },
     text:{
         fontSize: 25,
@@ -134,8 +137,6 @@ const styles = StyleSheet.create({
         height: "100%",
         justifyContent: "center",
         alignItems: "center",
-        borderWidth: 1,
-        borderColor: "#2b2b2b"
     },
     winnerCon:{
         justifyContent: "center",
